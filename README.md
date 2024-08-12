@@ -21,7 +21,7 @@ This is a software system developed to monitor and manage fuel consumption for v
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Somitech/Fuel-Consumption-Monitoring-and-Management-System.git
 
 2. **Navigate to the Project Directory**
    ```bash
