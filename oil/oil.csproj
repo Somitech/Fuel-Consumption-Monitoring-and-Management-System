@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA693EFF-529B-42C0-9697-F88FFF3E01A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>oil</RootNamespace>
+    <AssemblyName>oil</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D86640B5C08C283748C8E5D3853DD35B6D47BED1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>oil_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BellModfy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BellModfy.designer.cs">
+      <DependentUpon>BellModfy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BellUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BellUpdate.designer.cs">
+      <DependentUpon>BellUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarCoupon.designer.cs">
+      <DependentUpon>CarCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarDetails.designer.cs">
+      <DependentUpon>CarDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarInfo.designer.cs">
+      <DependentUpon>CarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarModify.designer.cs">
+      <DependentUpon>CarModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarUpdate.designer.cs">
+      <DependentUpon>CarUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterForm.designer.cs">
+      <DependentUpon>CounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouponSearch.designer.cs">
+      <DependentUpon>CouponSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnecter.cs" />
+    <Compile Include="Form1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FreeCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreeCoupon.designer.cs">
+      <DependentUpon>FreeCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GivinCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GivinCoupon.designer.cs">
+      <DependentUpon>GivinCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GivingCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GivingCoupon.designer.cs">
+      <DependentUpon>GivingCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GivingMansion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GivingMansion.Designer.cs">
+      <DependentUpon>GivingMansion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GivingModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GivingModify.designer.cs">
+      <DependentUpon>GivingModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GivingUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GivingUpdate.designer.cs">
+      <DependentUpon>GivingUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertBell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertBell.designer.cs">
+      <DependentUpon>InsertBell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCar.designer.cs">
+      <DependentUpon>InsertCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCounter.designer.cs">
+      <DependentUpon>InsertCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertREceaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertREceaver.designer.cs">
+      <DependentUpon>InsertREceaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerifyBell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyBell.Designer.cs">
+      <DependentUpon>VerifyBell.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BellModfy.resx">
+      <DependentUpon>BellModfy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BellUpdate.resx">
+      <DependentUpon>BellUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarCoupon.resx">
+      <DependentUpon>CarCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarDetails.resx">
+      <DependentUpon>CarDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarInfo.resx">
+      <DependentUpon>CarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarModify.resx">
+      <DependentUpon>CarModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarUpdate.resx">
+      <DependentUpon>CarUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounterForm.resx">
+      <DependentUpon>CounterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponSearch.resx">
+      <DependentUpon>CouponSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreeCoupon.resx">
+      <DependentUpon>FreeCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GivinCoupon.resx">
+      <DependentUpon>GivinCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GivingCoupon.resx">
+      <DependentUpon>GivingCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GivingMansion.resx">
+      <DependentUpon>GivingMansion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GivingModify.resx">
+      <DependentUpon>GivingModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GivingUpdate.resx">
+      <DependentUpon>GivingUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertBell.resx">
+      <DependentUpon>InsertBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCar.resx">
+      <DependentUpon>InsertCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCounter.resx">
+      <DependentUpon>InsertCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertREceaver.resx">
+      <DependentUpon>InsertREceaver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueriesForm.resx">
+      <DependentUpon>QueriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceaverCoupon.resx">
+      <DependentUpon>ReceaverCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceaverModify.resx">
+      <DependentUpon>ReceaverModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceaverUpdate.resx">
+      <DependentUpon>ReceaverUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VerifyBell.resx">
+      <DependentUpon>VerifyBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oil_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueriesForm.designer.cs">
+      <DependentUpon>QueriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceaverCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceaverCoupon.designer.cs">
+      <DependentUpon>ReceaverCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceaverModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceaverModify.designer.cs">
+      <DependentUpon>ReceaverModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceaverUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceaverUpdate.designer.cs">
+      <DependentUpon>ReceaverUpdate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-36215.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
